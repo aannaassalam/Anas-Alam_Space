@@ -1,0 +1,95 @@
+.reviewSection {
+  margin-top: 130px;
+  padding: 0 380px;
+  position: relative;
+}
+
+.reviewSection .vector2 {
+  object-fit: contain;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.reviewSection .vector3 {
+  object-fit: contain;
+  position: absolute;
+  top: 180px;
+  right: 0;
+}
+
+.reviewSection .reviewTop {
+  margin-bottom: 90px;
+}
+
+.reviewSection .text {
+  font-family: "Helvetica-medium";
+  font-size: 34px;
+}
+.reviewSection .user {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+}
+.reviewSection .user img {
+  height: 70px;
+}
+.reviewSection .user .nameAndRole {
+  margin-left: 25px;
+}
+.reviewSection .user .nameAndRole .name {
+  font-size: 22px;
+  font-family: "Helvetica-bold";
+  margin-bottom: 5px;
+}
+.reviewSection .user .nameAndRole .role {
+  font-family: "Helvetica-medium";
+  font-size: 18px;
+}
+
+@media (max-width: 1024px) {
+  .reviewSection {
+    padding: 0 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .reviewSection {
+    padding: 0 100px;
+  }
+}
+
+@media (max-width: 680px) {
+  .reviewSection {
+    padding: 0 30px;
+    margin-top: 80px;
+  }
+
+  .reviewSection .vector3 {
+    top: 0;
+  }
+
+  .reviewSection .reviewTop {
+    margin-bottom: 60px;
+  }
+
+  .reviewSection .text {
+    font-size: 20px;
+  }
+
+  .reviewSection .user img {
+    height: 45px;
+  }
+
+  .reviewSection .user .nameAndRole {
+    margin-left: 15px;
+  }
+
+  .reviewSection .user .nameAndRole .name {
+    font-size: 18px;
+  }
+
+  .reviewSection .user .nameAndRole .role {
+    font-size: 14px;
+  }
+}

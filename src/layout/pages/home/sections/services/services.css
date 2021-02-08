@@ -1,0 +1,15 @@
+.services {
+  padding: 0 145px;
+}
+
+@media (max-width: 1024px) {
+  .services {
+    padding: 0 40px;
+  }
+}
+
+@media (max-width: 680px) {
+  .services {
+    padding: 0 15px;
+  }
+}

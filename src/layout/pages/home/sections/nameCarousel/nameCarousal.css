@@ -1,0 +1,119 @@
+.nameCarousal {
+  padding: 180px 0;
+}
+
+.nameCarousal .heading {
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nameCarousal .heading p {
+  font-family: "Helvetica-medium";
+  letter-spacing: 2px;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.nameCarousal .heading h2 {
+  font-family: "Helvetica-bold";
+  font-size: 48px;
+  width: 40%;
+  text-align: center;
+}
+
+.nameCarousal .slider {
+  margin-left: 200px;
+}
+
+/* .nameCarousal .slider .slick-slider {
+  padding: 20px;
+} */
+
+.nameCarousal .slider .slick-prev,
+.nameCarousal .slider .slick-next {
+  padding: 8px;
+  background-color: transparent;
+}
+
+.nameCarousal .slider .slick-prev:hover::before,
+.nameCarousal .slider .slick-next:hover::before {
+  color: #0e6fff;
+}
+
+.nameCarousal .slider .slick-prev {
+  top: auto;
+  bottom: 0;
+  bottom: -30px;
+  left: 30px;
+  z-index: 2;
+}
+
+.nameCarousal .slider .slick-prev::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f060";
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 25px;
+}
+
+.nameCarousal .slider .slick-next {
+  top: auto;
+  bottom: 0;
+  left: 80px;
+  right: auto;
+  bottom: -30px;
+}
+
+.nameCarousal .slider .slick-next::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f061";
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 25px;
+}
+
+@media (max-width: 1024px) {
+  .nameCarousal {
+    padding: 100px 0;
+  }
+  .nameCarousal .heading {
+    margin-bottom: 70px;
+  }
+  .nameCarousal .heading h2 {
+    width: 55%;
+  }
+  .nameCarousal .slider {
+    margin-left: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nameCarousal .heading h2 {
+    width: 75%;
+  }
+  .nameCarousal .slider {
+    margin-left: 80px;
+  }
+}
+
+@media (max-width: 680px) {
+  .nameCarousal {
+    padding-top: 80px;
+  }
+
+  .nameCarousal .heading h2 {
+    width: 95%;
+    font-size: 30px;
+  }
+  .nameCarousal .slider {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 380px) {
+  .nameCarousal .slider {
+    margin-left: 0px;
+  }
+}

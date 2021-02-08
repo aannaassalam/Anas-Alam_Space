@@ -1,0 +1,136 @@
+.service {
+  padding: 100px 125px;
+  background-image: url("../../../../../../assets/creame\ bg.png");
+  background-size: contain;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.service .heading {
+  font-family: "Helvetica-medium";
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.service .title {
+  font-family: "Helvetica-bold";
+  font-size: 45px;
+  width: 55%;
+  margin-bottom: 40px;
+}
+
+.service .description {
+  font-family: "Helvetica-light";
+  font-size: 20px;
+  width: 50%;
+}
+
+.service .boxes {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 60px;
+}
+
+.service .boxes .box {
+  width: 48%;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 50px;
+}
+
+.service .boxes .box img {
+  width: 40px;
+  object-fit: contain;
+}
+
+.service .boxes .box .text {
+  padding: 0 45px 0 25px;
+}
+
+.service .boxes .box .text .title2 {
+  font-family: "Helvetica-bold";
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 1024px) {
+  .service {
+    padding: 100px 60px;
+  }
+
+  .service .title {
+    width: 65%;
+  }
+
+  .service .description {
+    width: 65%;
+  }
+
+  .service .boxes .box .text {
+    padding: 0 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .service {
+    padding: 100px 60px;
+  }
+
+  .service .title {
+    width: 95%;
+  }
+
+  .service .description {
+    width: 95%;
+  }
+
+  .service .boxes {
+    flex-direction: column;
+  }
+
+  .service .boxes .box {
+    width: 80%;
+  }
+}
+
+@media (max-width: 680px) {
+  .service {
+    padding: 30px 25px;
+    background-size: cover;
+    border-radius: 20px;
+  }
+
+  .service .heading {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .service .title {
+    font-size: 30px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .service .description {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .service .boxes .box {
+    width: 100%;
+  }
+
+  .service .boxes .box img {
+    width: 30px;
+    margin-top: 2px;
+  }
+
+  .service .boxes .box .text {
+    padding: 0 15px;
+  }
+
+  .service .boxes .box .text .title2 {
+    font-size: 20px;
+  }
+}

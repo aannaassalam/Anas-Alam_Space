@@ -1,0 +1,115 @@
+.leader {
+  padding: 0 200px;
+  margin-bottom: 200px;
+}
+
+.leader h2 {
+  font-family: "Helvetica-bold";
+  font-size: 50px;
+  text-align: center;
+}
+
+.leader .description {
+  font-family: "Helvetica-light";
+  font-size: 20px;
+  width: 65%;
+  text-align: center;
+  margin: 30px auto 60px;
+}
+
+.leader .leaders {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.leader .leaders .leaderCard {
+  width: 23.5%;
+}
+
+.leader .leaders .leaderCard img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.leader .leaders .leaderCard .nameAndRole {
+  margin-top: 30px;
+}
+
+.leader .leaders .leaderCard .nameAndRole .name {
+  font-family: "Helvetica-bold";
+  font-size: 22px;
+  text-align: center;
+}
+
+.leader .leaders .leaderCard .nameAndRole .role {
+  font-family: "Helvetica-medium";
+  font-size: 18px;
+  text-align: center;
+  margin-top: 3px;
+}
+
+@media (max-width: 1024px) {
+  .leader {
+    padding: 100px;
+    padding-bottom: 0;
+    margin-bottom: 150px;
+  }
+
+  .leader .description {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .leader {
+    padding: 70px 80px 0;
+    margin-bottom: 150px;
+  }
+
+  .leader .description {
+    width: 90%;
+  }
+
+  .leader .leaders .leaderCard .nameAndRole .name {
+    font-size: 20px;
+  }
+
+  .leader .leaders .leaderCard .nameAndRole .role {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 680px) {
+  .leader {
+    padding: 30px;
+    padding-bottom: 0;
+    margin-bottom: 80px;
+  }
+
+  .leader h2 {
+    font-size: 35px;
+  }
+
+  .leader .description {
+    width: 100%;
+    font-size: 18px;
+  }
+
+  .leader .leaders {
+    flex-direction: column;
+  }
+
+  .leader .leaders .leaderCard {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .leader .leaders .leaderCard .nameAndRole .name {
+    font-size: 22px;
+  }
+
+  .leader .leaders .leaderCard .nameAndRole .role {
+    font-size: 18px;
+  }
+}

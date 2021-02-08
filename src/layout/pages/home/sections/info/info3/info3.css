@@ -1,0 +1,70 @@
+.info3 {
+  display: flex;
+  margin-top: 100px;
+  padding-bottom: 180px;
+}
+
+.info3 .left {
+  width: 52%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.info3 .left .text {
+  width: 80%;
+}
+
+.info3 .left .text h3 {
+  font-family: "Helvetica-bold";
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.info3 .left .text p {
+  font-family: "Helvetica-light";
+  font-size: 23px;
+  margin-bottom: 45px;
+}
+
+.info3 .left .text a {
+  color: #0e6fff;
+  text-decoration: underline;
+  font-family: "Helvetica-bold";
+}
+
+.info3 .right {
+  width: 48%;
+}
+
+.info3 .right img {
+  width: 100%;
+  object-fit: contain;
+}
+
+@media (max-width: 1024px) {
+  .info3 {
+    padding-bottom: 110px;
+  }
+}
+
+@media (max-width: 768px) {
+  .info3 {
+    flex-direction: column;
+    margin-top: 80px;
+  }
+
+  .info3 .left,
+  .info3 .right {
+    width: 100%;
+  }
+
+  .info3 .left .text {
+    width: 90%;
+    margin: 0;
+  }
+
+  .info3 .left {
+    margin-bottom: 30px;
+  }
+}

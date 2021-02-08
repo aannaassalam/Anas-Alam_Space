@@ -1,0 +1,290 @@
+.hero {
+  display: flex;
+  width: 100%;
+  background-image: url("../../../../../assets/fading\ creame\ rectangle.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-top: 200px;
+  padding-left: 200px;
+}
+
+.hero .left {
+  display: flex;
+  /* justify-content: center; */
+  width: 50%;
+}
+.hero .left .details {
+  width: 75%;
+}
+
+.hero .left .details .heading {
+  font-size: 22px;
+  font-family: "Helvetica-medium";
+  color: #b3aca2;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.hero .left .details .title {
+  font-size: 65px;
+  font-family: "Helvetica-bold";
+  margin-top: 26px;
+  margin-bottom: 50px;
+}
+
+.hero .left .details button {
+  font-family: "Helvetica-bold";
+  border: 1px solid #0e6fff;
+  background-color: #0e6fff;
+  color: #fff;
+  padding: 15px 30px;
+  font-size: 22px;
+  border-radius: 8px;
+  cursor: pointer;
+  outline: none;
+}
+
+.hero .left .details button:active {
+  transform: scale(0.99);
+}
+
+.hero .left .details .review {
+  margin-top: 130px;
+}
+
+.hero .left .details .review .text {
+  font-family: "Helvetica-medium";
+  font-size: 34px;
+}
+
+.hero .left .details .review .user {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.hero .left .details .review .user img {
+  height: 70px;
+}
+
+.hero .left .details .review .user .nameAndRole {
+  margin-left: 25px;
+}
+
+.hero .left .details .review .user .nameAndRole .name {
+  font-size: 22px;
+  font-family: "Helvetica-bold";
+  margin-bottom: 5px;
+}
+
+.hero .left .details .review .user .nameAndRole .role {
+  font-family: "Helvetica-medium";
+  font-size: 18px;
+}
+
+.hero .right {
+  width: 50%;
+}
+
+.hero .right img {
+  width: 100%;
+}
+
+.hero .right .slick-prev,
+.hero .right .slick-next {
+  width: auto;
+  height: auto;
+  padding: 8px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+}
+
+.hero .right .slick-prev:hover,
+.hero .right .slick-next:hover {
+  background-color: #0e6fff;
+}
+
+.hero .right .slick-prev:active,
+.hero .right .slick-next:active {
+  padding: 7px;
+}
+
+.hero .right .slick-prev:hover::before,
+.hero .right .slick-next:hover::before {
+  color: #fff;
+}
+
+.hero .right .slick-prev {
+  top: auto;
+  bottom: 0;
+  bottom: 10px;
+  left: 30px;
+  z-index: 2;
+}
+
+.hero .right .slick-prev::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f060";
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 25px;
+}
+
+.hero .right .slick-next {
+  top: auto;
+  bottom: 0;
+  left: 80px;
+  right: auto;
+  bottom: 10px;
+}
+
+.hero .right .slick-next::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f061";
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 25px;
+}
+
+.hero .right .slick-dots {
+  bottom: auto;
+  top: 0;
+  height: 5px;
+  background-color: #fff;
+}
+
+.hero .right .slick-dots li {
+  width: auto;
+  height: 5px;
+  margin: 0;
+  width: 25%;
+  bottom: 12px;
+}
+
+.hero .right .slick-dots li button {
+  line-height: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.hero
+  .right
+  .slick-dots
+  li:not(.slick-active)
+  button:not(.active):hover::before {
+  background-color: transparent;
+}
+
+.hero .right .slick-dots li button::before {
+  line-height: 0;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  content: "";
+  background-color: #ffb19d;
+  opacity: 0;
+}
+
+.hero .right .slick-dots li.slick-active button:before,
+.hero .right .slick-dots li button.active::before {
+  opacity: 1;
+}
+
+@media (max-width: 1024px) {
+  .hero {
+    padding-left: 100px;
+  }
+
+  .hero .left .details .title {
+    font-size: 45px;
+  }
+
+  .hero .left .details .review {
+    margin-top: 50px;
+  }
+
+  .hero .left .details .review .text {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding-top: 150px;
+    flex-direction: column;
+  }
+  .hero .left {
+    display: flex;
+    /* justify-content: center; */
+    width: 100%;
+  }
+
+  .hero .left .details {
+    width: 100%;
+  }
+
+  .hero .left .details .title {
+    font-size: 50px;
+  }
+
+  .hero .left .details .review {
+    display: none;
+  }
+
+  .hero .right {
+    width: 85%;
+    margin-top: 80px;
+  }
+}
+
+@media (max-width: 680px) {
+  .hero {
+    padding-top: 100px;
+    padding-left: 30px;
+  }
+
+  .hero .left .details .heading {
+    font-size: 18px;
+  }
+
+  .hero .left .details .title {
+    font-size: 35px;
+  }
+
+  .hero .left .details .review {
+    width: 70%;
+  }
+
+  .hero .left .details .review .text {
+    font-size: 20px;
+  }
+
+  .hero .left .details button {
+    padding: 10px 20px;
+    font-size: 18px;
+  }
+
+  .hero .left .details .review .user img {
+    height: 50px;
+  }
+
+  .hero .left .details .review .user .nameAndRole {
+    margin-left: 15px;
+  }
+
+  .hero .left .details .review .user .nameAndRole .name {
+    font-size: 20px;
+    font-family: "Helvetica-bold";
+    margin-bottom: 5px;
+  }
+
+  .hero .left .details .review .user .nameAndRole .role {
+    font-family: "Helvetica-medium";
+    font-size: 16px;
+  }
+
+  .hero .right {
+    width: 90%;
+    margin-top: 50px;
+  }
+}

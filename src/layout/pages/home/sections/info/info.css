@@ -1,0 +1,26 @@
+.info {
+  padding: 0 180px;
+  background-image: url("../../../../../assets/blue\ bg.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+}
+
+@media (max-width: 1024px) {
+  .info {
+    padding: 0 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .info {
+    background-size: auto;
+  }
+}
+
+@media (max-width: 680px) {
+  .info {
+    padding: 0 30px;
+    background-size: 100% 85%;
+  }
+}

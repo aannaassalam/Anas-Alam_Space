@@ -1,0 +1,100 @@
+.CTA {
+  padding: 200px;
+}
+
+.CTA .CTAinner {
+  padding: 80px 100px;
+  background-color: #fff4d4;
+  background-image: url("../../../../../assets/mask.png");
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.CTA .CTAinner .CTAinfo {
+  width: 60%;
+}
+
+.CTA .CTAinner .CTAinfo h4 {
+  font-family: "Helvetica-light";
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+.CTA .CTAinner .CTAinfo p {
+  font-family: "Helvetica-light";
+  font-size: 20px;
+  /* width: 90%; */
+}
+
+.CTA .CTAinner button {
+  font-family: "Helvetica-bold";
+  border: 1px solid #0e6fff;
+  background-color: #0e6fff;
+  color: #fff;
+  padding: 15px 30px;
+  font-size: 22px;
+  border-radius: 8px;
+  cursor: pointer;
+  outline: none;
+}
+
+.CTA .CTAinner button:active {
+  transform: scale(0.99);
+}
+
+@media (max-width: 1024px) {
+  .CTA {
+    padding: 100px;
+    background-position: top;
+  }
+
+  .CTA .CTAinner {
+    padding: 30px 60px;
+  }
+
+  .CTA .CTAinner .CTAinfo {
+    width: 65%;
+  }
+
+  .CTA .CTAinner button {
+    padding: 10px 20px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .CTA .CTAinner {
+    flex-direction: column;
+  }
+
+  .CTA .CTAinner .CTAinfo {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 680px) {
+  .CTA {
+    padding: 100px 30px;
+  }
+
+  .CTA .CTAinner {
+    padding: 30px 40px;
+    background-position: top;
+  }
+}
+
+@media (max-width: 380px) {
+  .CTA .CTAinner .CTAinfo h4 {
+    font-size: 30px;
+  }
+
+  .CTA .CTAinner .CTAinfo p {
+    font-size: 18px;
+  }
+}

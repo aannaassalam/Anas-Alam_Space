@@ -1,0 +1,64 @@
+.info2 {
+  display: flex;
+  margin-top: 100px;
+}
+
+.info2 .left {
+  width: 48%;
+}
+
+.info2 .left img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.info2 .right {
+  width: 52%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.info2 .right .text {
+  width: 80%;
+  margin-left: 80px;
+}
+
+.info2 .right .text h3 {
+  font-family: "Helvetica-bold";
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.info2 .right .text p {
+  font-family: "Helvetica-light";
+  font-size: 23px;
+  margin-bottom: 45px;
+}
+
+.info2 .right .text a {
+  color: #0e6fff;
+  text-decoration: underline;
+  font-family: "Helvetica-bold";
+}
+
+@media (max-width: 768px) {
+  .info2 {
+    flex-direction: column-reverse;
+    margin-top: 80px;
+  }
+
+  .info2 .left,
+  .info2 .right {
+    width: 100%;
+  }
+
+  .info2 .right .text {
+    width: 90%;
+    margin: 0;
+  }
+
+  .info2 .right {
+    margin-bottom: 30px;
+  }
+}

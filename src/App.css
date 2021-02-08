@@ -1,38 +1,49 @@
+@font-face {
+  font-family: Helvetica-medium;
+  src: url("./assets/fonts/HelveticaNeueMed.ttf");
+}
+
+@font-face {
+  font-family: Helvetica-bold;
+  src: url("./assets/fonts/HelveticaNeueBd.ttf");
+}
+
+@font-face {
+  font-family: Helvetica-heavy;
+  src: url("./assets/fonts/HelveticaNeueHv.ttf");
+}
+
+@font-face {
+  font-family: Helvetica-light;
+  src: url("./assets/fonts/HelveticaNeueLt.ttf");
+}
+
+@font-face {
+  font-family: Helvetica-rg;
+  src: url("./assets/fonts/HelveticaNeue.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
 .App {
-  text-align: center;
+  position: relative;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  background-color: transparent;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+::-webkit-scrollbar-thumb {
+  background-color: #b3aca2;
+  border-radius: 5px;
 }
